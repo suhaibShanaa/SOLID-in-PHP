@@ -1,0 +1,16 @@
+{
+    "name": "suhaib-sal/solid-in-php",
+    "description": "SOLID in PHP Example",
+    "authors": [
+        {
+            "name": "suahaibShanaa",
+            "email": "s.shanaa@classera.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\" : "Classes"
+        }
+    }
+}
