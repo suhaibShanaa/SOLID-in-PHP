@@ -1,17 +1,26 @@
 <?php
 
+namespace Classes;
+
 class Match 
 {
 
-    public function attack(){
+    private $attack;
+    private $defense;
+    private $kepper;
+
+    public function __construct(){
+
+        $this->attack= new Attack();
+        $this->defense= new Defense();
+        $this->kepper= new Kepper();
 
     }
-    public function defense(){
-        
+
+    public function run(){
+        echo "Start Play";
     }
-    public function keeper(){
-        
-    }
+
 
 
 }
