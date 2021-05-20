@@ -7,6 +7,6 @@ class Child extends Father {
 
     public function Keeping(){
         
-        return true;
+        return "Child Good Keeping";
     }
 }

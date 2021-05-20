@@ -10,8 +10,8 @@ class KeppingPlayer implements PlayerInterface {
 
     public function play() {
 
-        // $keeper = new Child(); // in output return 1
-        $keeper = new Father();  //  in output "good keeping"  // actully must be the same output this break Liskove
+        $keeper = new Child();   
+        // $keeper = new Father();  
         echo $keeper->Keeping();
     }
 }
