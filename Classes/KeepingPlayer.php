@@ -2,10 +2,11 @@
 
 namespace Classes;
 
+use Interfaces\PlayerInterface;
 use Interfaces\KeepingInterface;
 use Players\Child;
 
-class  KeepingPlayer implements KeepingInterface {
+class  KeepingPlayer implements PlayerInterface,KeepingInterface {
 
     // public function play() {
     //     $keeper = new Child();   
@@ -18,6 +19,9 @@ class  KeepingPlayer implements KeepingInterface {
         
         $keeper = new Child();   
         echo $keeper->Keeping();
+    }
+    public function Play() {
+        $this->Keeping();
     }
 }
 
