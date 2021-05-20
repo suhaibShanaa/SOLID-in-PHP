@@ -19,7 +19,28 @@ class Match
         echo "\n";
 
         foreach ($this->playerList as $player){
-            $player->play();
+            // $player->play();
+            
+            // !!! The Match Model is High Level we break dependance principle becuase make Match depend on Low level Class Makeing a functions
+            if($player instanceof AttackPlayer){ 
+
+                $player->Attack();
+
+            }else if($player instanceof DefensePlayer){
+                // $player->Defense();
+            
+                /*  if Keeper Had a Red Card and Out of the game */ 
+                // The Defense Can't Keeping and This Make Error and Break 
+                $player->Keeping();
+
+            }
+            /*  if Keeper Had a Red Card and Out of the game */
+            
+            // else if($player instanceof KeepingPlayer){
+            //     $player->Keeping();
+
+            // }
+            
             echo "\n";
 
         }
