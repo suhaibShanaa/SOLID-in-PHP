@@ -2,7 +2,7 @@
 
 namespace Classes;
 
-use Interfaces\PlayerInterface;
+use Interfaces\AttackInterface;
 
 
 class AttackPlayer implements AttackInterface {

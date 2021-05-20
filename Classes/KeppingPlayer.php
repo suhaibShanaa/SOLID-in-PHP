@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Interfaces\KeppingInterface;
 use Players\Child;
 
 class KeppingPlayer implements KeppingInterface {
