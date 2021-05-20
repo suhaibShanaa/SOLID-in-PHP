@@ -4,16 +4,14 @@ namespace Classes;
 
 use Interfaces\PlayerInterface;
 
-class DefensePlayer implements PlayerInterface {
+class DefensePlayer implements DefenseInterface {
 
     // public function play() {
     //     echo "Defense";
     // }
-    public function Attack() {
-    }
+    
     public function Defense() {
         echo "Defense";
     }
-    public function Keeping() {
-    }
+    
 }
