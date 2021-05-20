@@ -2,10 +2,10 @@
 
 namespace Classes;
 
-use Interfaces\KeppingInterface;
+use Interfaces\KeepingInterface;
 use Players\Child;
 
-class KeppingPlayer implements KeppingInterface {
+class  KeepingPlayer implements KeepingInterface {
 
     // public function play() {
     //     $keeper = new Child();   
